@@ -32,10 +32,11 @@
     <main>
         <div class="container main-content">
             <section class="profile">
-                <img src="src/profile-photo-2.png" class="profile-photo" alt="Марина" height="370" width="380" />
+                <img src="src/marishka.png" class="profile-photo" alt="Марина" height="370" width="380" />
 
                 <div class="profile-article">
                     <div class="left">“Садху доска не про боль и не про терпение”</div>
+                    <div class="left my-1">“Боли нет - есть страх боли. Важно лишь понимать как работает наш мозг”</div>
                     <div class="right">“Соприкасаясь с трансцендентным мы освобождаемся от страхов”</div>
                 </div>
             </section>
@@ -57,19 +58,25 @@
                 <div class="swiper mySwiper">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
+                            <img id="r7" src="src/new_response2.jpg" />
+                        </div>
+                        <div class="swiper-slide">
                             <img id="r1" src="src/r1.jpg" />
                         </div>
                         <div class="swiper-slide">
-                            <img id="r2" src="src/r2.jpg" />
+                            <img id="r4" src="src/new_response.jpg" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img id="r5" src="src/r5.jpg" />
                         </div>
                         <div class="swiper-slide">
                             <img id="r3" src="src/r3.jpg" />
                         </div>
                         <div class="swiper-slide">
-                            <img id="r4" src="src/r4.jpg" />
+                            <img id="r9" src="src/r4.jpg" />
                         </div>
                         <div class="swiper-slide">
-                            <img id="r5" src="src/r5.jpg" />
+                            <img id="r2" src="src/r2.jpg" />
                         </div>
                     </div>
                     <div class="swiper-button-next"></div>
@@ -79,14 +86,14 @@
             </section>
 
             <section class="options-working" style="padding-bottom: 30px;">
-                <h2 class="options-working-title">Варианты работы с гвоздями</h2>
+                <!-- <h2 class="options-working-title">Варианты работы с гвоздями</h2> -->
 
                 <article class="options-working-content">
                     <div class="options-working-blocs">
                         <div class="options-working-blocs">
                             <ul class="options-working-list options-working-text">
                                 <li>
-                                    <h3 class="options-working-content-title">Глубока практика</h3>
+                                    <h3 class="options-working-content-title">Гвоздетерапия</h3>
                                 </li>
                                 <li>
                                     <p>Состоит из:</p>
@@ -113,7 +120,7 @@
                 </article>
 
 
-                <article class="options-working-content">
+                <!-- <article class="options-working-content">
                     <div class="options-working-blocs">
                         <div class="options-working-blocs">
                             <div class="options-working-img options-working-img__left">
@@ -130,7 +137,7 @@
                             </div>
                             </ul>
                         </div>
-                </article>
+                </article> -->
             </section>
         </div>
     </main>
@@ -170,11 +177,11 @@
                 enabled: true,
             },
             coverflowEffect: {
-                rotate: 50,
+                rotate: 40,
                 stretch: 0,
                 depth: 100,
                 modifier: 1,
-                slideShadows: true,
+                slideShadows: false,
             },
             pagination: {
                 el: ".swiper-pagination",
@@ -186,6 +193,8 @@
             },
             on: {
                 init(swiper) {
+                    swiper.slideNext()
+                    swiper.slideNext()
                     swiper.slideNext()
                 }
             }
